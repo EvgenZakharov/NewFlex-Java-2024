@@ -11,10 +11,11 @@ public class VacationCalculatorController {
             @RequestParam double averageSalary,
             @RequestParam int vacationDays) {
 
-        // Расчет отпускных
-        double dailySalary = averageSalary / 29.3;
-        double vacationPay = dailySalary * vacationDays;
+        final double averageNumberOfDays = 29.3;
 
-        return vacationPay;
+        //Расчет отпускных
+        double dailySalary = averageSalary / averageNumberOfDays;
+        return dailySalary * vacationDays;
+
     }
 }
