@@ -36,7 +36,7 @@ class CalculatorApplicationTests {
 		double expectedVacationPay = 0.0;
 		double actualVacationPay = controller.calculateVacationPay(averageSalary, vacationDays);
 
-		assertEquals(expectedVacationPay, actualVacationPay, "Расчет отпускных для нулевых дней выполнен неверно");
+		assertEquals(expectedVacationPay, actualVacationPay, "Расчет отпускных для нуля дней выполнен неверно");
 	}
 
 	@Test
