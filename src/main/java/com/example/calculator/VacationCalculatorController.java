@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class VacationCalculatorController {
     @GetMapping("/calculate")
     public double calculateVacationPay(
-            @RequestParam double averageSalary,
-            @RequestParam int vacationDays) {
+                                        @RequestParam double averageSalary,
+                                        @RequestParam int vacationDays) {
 
         final double averageNumberOfDays = 29.3;
 
